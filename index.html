@@ -867,30 +867,26 @@ footer{
   position:relative;
 }
 
-.therapist::after{
+/* 師傅卡片：看更多照片提示 */
+.therapist .therapist-info::after{
   content:"點擊看更多照片";
-  position:absolute;
-  right:16px;
-  bottom:16px;
-  padding:7px 13px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:12px;
+  padding:7px 14px;
   border-radius:999px;
-  background:rgba(0,0,0,.62);
-  border:1px solid rgba(0,255,157,.26);
+  background:rgba(0,255,157,.08);
+  border:1px solid rgba(0,255,157,.24);
   color:#9effdc;
   font-size:12px;
   font-weight:800;
   letter-spacing:.5px;
-  backdrop-filter:blur(10px);
-  pointer-events:none;
 }
 
-@media(max-width:768px){
-  .therapist::after{
-    right:12px;
-    bottom:12px;
-    font-size:11px;
-    padding:6px 11px;
-  }
+.therapist:hover .therapist-info::after{
+  background:rgba(0,255,157,.14);
+  border-color:rgba(0,255,157,.42);
 }
 </style>
 
