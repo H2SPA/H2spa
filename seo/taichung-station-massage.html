@@ -158,6 +158,31 @@ ul{
   .grid{grid-template-columns:1fr}
   .card{padding:24px}
 }
+
+.related-links{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:20px;
+}
+.related-links a{
+  display:block;
+  padding:16px 18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(0,217,255,.12);
+  color:#dffcf3;
+  font-weight:800;
+  text-decoration:none;
+}
+.related-links a:hover{
+  border-color:rgba(0,255,157,.35);
+  color:#9effdc;
+}
+@media(max-width:768px){
+  .related-links{grid-template-columns:1fr}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -239,6 +264,14 @@ ul{
     <p>
       台中火車站、東區、復興路附近交通便利，對於外地客、市區客人或下班後想安排舒壓的人都相對方便。
     </p>
+
+    <p>
+      除了台中火車站附近，從中區、南區或大里方向過來也很適合安排。
+      如果你想了解南區、中區、大里到東區復興路的交通方式，
+      可以參考
+      <a href="/blog/taichung-south-district-to-east-district-massage.html">台中南區男士按摩到東區方便嗎？</a>。
+    </p>
+
     <ul>
       <li>台中火車站附近</li>
       <li>台中東區、復興路周邊</li>
@@ -257,6 +290,20 @@ ul{
     <p>
       H2 Men's Spa 適合想在台中市區安排男士按摩、同志友善舒壓、運動後放鬆與私人 SPA 體驗的客人。
     </p>
+  </section>
+
+
+  <section class="card">
+    <h2>南區／中區／大里延伸閱讀</h2>
+    <p>
+      想從台中南區、中區或大里方向安排男士按摩，可以先從以下頁面了解交通、停車與預約方式。
+    </p>
+    <div class="related-links">
+      <a href="/blog/taichung-south-district-to-east-district-massage.html">台中南區男士按摩到東區方便嗎？</a>
+      <a href="/seo/taichung-east-district-massage.html">台中東區男士按摩推薦</a>
+      <a href="/seo/taichung-station-massage.html">台中火車站附近男士按摩</a>
+      <a href="/seo/taichung-massage.html">台中男士按摩預約指南</a>
+    </div>
   </section>
 
   <section class="card">
