@@ -125,5 +125,19 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+  <loc>https://www.h2menspa.com/blog/taichung-mens-spa-recommend.html</loc>
+  <lastmod>2026-06-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.h2menspa.com/blog/taichung-south-district-to-east-district-massage.html</loc>
+  <lastmod>2026-06-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
 
 </urlset>
