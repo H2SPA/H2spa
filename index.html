@@ -15,9 +15,10 @@
 <meta property="og:title" content="H2 Men's Spa｜台中東區男士按摩・台中火車站附近同志友善 SPA">
 <meta property="og:description" content="台中東區復興路男士舒壓空間，距離台中火車站步行約10分鐘，採預約制，重視隱私、舒適與師傅選擇。可透過官方 LINE ID @499bwixl 詢問今日空位。">
 <meta property="og:url" content="https://www.h2menspa.com/">
-<meta property="og:image" content="https://www.h2menspa.com/cover.jpg">
+<meta property="og:image" content="https://www.h2menspa.com/h2-main-banner.webp">
 
 <link rel="preload" as="image" href="cover.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="h2-main-banner.webp" fetchpriority="high">
 <link rel="preload" as="image" href="31.webp" fetchpriority="high">
 <link rel="preload" as="image" href="71.webp" fetchpriority="high">
 
@@ -887,6 +888,99 @@ footer{
   background:rgba(0,255,157,.14);
   border-color:rgba(0,255,157,.42);
 }
+
+.brand-visual-banner{
+  width:min(1040px,100%);
+  margin:34px auto 0;
+  position:relative;
+  border-radius:30px;
+  overflow:hidden;
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(97,244,255,.20);
+  box-shadow:
+    0 0 0 1px rgba(114,255,200,.08),
+    0 18px 70px rgba(0,217,255,.14),
+    0 0 95px rgba(114,255,200,.08);
+}
+
+.brand-visual-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  background:
+    radial-gradient(circle at 20% 32%,rgba(114,255,200,.14),transparent 36%),
+    radial-gradient(circle at 86% 70%,rgba(246,163,255,.10),transparent 32%),
+    linear-gradient(120deg,rgba(97,244,255,.10),transparent 48%,rgba(114,255,200,.08));
+  mix-blend-mode:screen;
+}
+
+.brand-visual-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+.brand-visual-caption{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:18px;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 18px;
+  border-radius:999px;
+  background:rgba(3,5,12,.62);
+  border:1px solid rgba(97,244,255,.18);
+  backdrop-filter:blur(16px);
+  color:#f7fbff;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.5px;
+  box-shadow:0 10px 30px rgba(0,0,0,.24);
+}
+
+.brand-visual-caption span{
+  color:#72ffc8;
+}
+
+.brand-visual-caption strong{
+  color:#f7fbff;
+  font-weight:900;
+}
+
+@media(max-width:768px){
+  .brand-visual-banner{
+    margin-top:26px;
+    border-radius:24px;
+  }
+
+  .brand-visual-banner img{
+    aspect-ratio:1/1;
+  }
+
+  .brand-visual-caption{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin:0;
+    border-radius:0;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    font-size:13px;
+    line-height:1.7;
+    padding:16px;
+  }
+}
+
 </style>
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -918,6 +1012,21 @@ footer{
     <h1>台中東區男士按摩・台中火車站附近同志友善舒壓空間</h1>
     <p class="hero-sub">H2 Men's Spa 位於台中市東區復興路四段20巷38號，距離台中火車站步行約10分鐘，提供預約制男士按摩、運動後放鬆與隱私舒壓體驗。</p>
     <p class="hero-note">可先透過官方 LINE ID @499bwixl 詢問今日空位、推薦師傅、方案內容與預約時段。</p>
+    <div class="brand-visual-banner">
+      <img
+        src="h2-main-banner.webp"
+        alt="H2 Men's Spa Hush and Horizon 主視覺 Banner，收留疲憊的私密之境，探尋療癒地平線"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      >
+      <div class="brand-visual-caption">
+        <div><strong>Hush &amp; Horizon</strong>｜<span>收留疲憊的私密之境</span></div>
+        <div>Hush Space, Healing Horizon.</div>
+      </div>
+    </div>
     <div class="btn-group">
       <a class="btn btn-primary" href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener">詢問今天空位與師傅</a>
       <a class="btn btn-secondary" href="#plans">查看方案價格</a>
