@@ -15,9 +15,10 @@
 <meta property="og:title" content="H2 Men's Spa｜台中東區男士按摩・台中火車站附近同志友善 SPA">
 <meta property="og:description" content="台中東區復興路男士舒壓空間，距離台中火車站步行約10分鐘，採預約制，重視隱私、舒適與師傅選擇。可透過官方 LINE ID @499bwixl 詢問今日空位。">
 <meta property="og:url" content="https://www.h2menspa.com/">
-<meta property="og:image" content="https://www.h2menspa.com/cover.jpg">
+<meta property="og:image" content="https://www.h2menspa.com/h2-main-banner.webp">
 
 <link rel="preload" as="image" href="cover.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="h2-main-banner.webp" fetchpriority="high">
 <link rel="preload" as="image" href="31.webp" fetchpriority="high">
 <link rel="preload" as="image" href="71.webp" fetchpriority="high">
 
@@ -887,6 +888,98 @@ footer{
   background:rgba(0,255,157,.14);
   border-color:rgba(0,255,157,.42);
 }
+
+.brand-visual-banner{
+  width:100vw;
+  margin:34px calc(50% - 50vw) 0;
+  position:relative;
+  border-radius:0;
+  overflow:hidden;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+}
+
+.brand-visual-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:2;
+  background:
+    radial-gradient(circle at 20% 32%,rgba(114,255,200,.14),transparent 36%),
+    radial-gradient(circle at 86% 70%,rgba(246,163,255,.10),transparent 32%),
+    linear-gradient(120deg,rgba(97,244,255,.10),transparent 48%,rgba(114,255,200,.08));
+  mix-blend-mode:screen;
+}
+
+.brand-visual-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+}
+
+.brand-visual-caption{
+  position:absolute;
+  left:22px;
+  right:22px;
+  bottom:18px;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:14px 18px;
+  border-radius:999px;
+  background:rgba(3,5,12,.62);
+  border:1px solid rgba(97,244,255,.18);
+  backdrop-filter:blur(16px);
+  color:#f7fbff;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.5px;
+  box-shadow:0 10px 30px rgba(0,0,0,.24);
+}
+
+.brand-visual-caption span{
+  color:#72ffc8;
+}
+
+.brand-visual-caption strong{
+  color:#f7fbff;
+  font-weight:900;
+}
+
+@media(max-width:768px){
+  .brand-visual-banner{
+    margin-top:26px;
+    border-radius:0;
+  }
+
+  .brand-visual-banner img{
+    aspect-ratio:auto;
+    height:auto;
+    object-fit:contain;
+  }
+
+  .brand-visual-caption{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin:0;
+    border-radius:0;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    font-size:13px;
+    line-height:1.7;
+    padding:16px;
+  }
+}
+
 </style>
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -907,6 +1000,7 @@ footer{
       <a href="#environment">環境</a>
       <a href="#map">交通</a>
       <a href="#faq">FAQ</a>
+      <a href="#blog">專欄</a>
       <a href="#recruitment">徵才</a>
     </div>
   </div>
@@ -918,6 +1012,21 @@ footer{
     <h1>台中東區男士按摩・台中火車站附近同志友善舒壓空間</h1>
     <p class="hero-sub">H2 Men's Spa 位於台中市東區復興路四段20巷38號，距離台中火車站步行約10分鐘，提供預約制男士按摩、運動後放鬆與隱私舒壓體驗。</p>
     <p class="hero-note">可先透過官方 LINE ID @499bwixl 詢問今日空位、推薦師傅、方案內容與預約時段。</p>
+    <div class="brand-visual-banner">
+      <img
+        src="h2-main-banner.webp"
+        alt="H2 Men's Spa Hush and Horizon 主視覺 Banner，收留疲憊的私密之境，探尋療癒地平線"
+        width="1600"
+        height="900"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      >
+      <div class="brand-visual-caption">
+        <div><strong>Hush &amp; Horizon</strong>｜<span>收留疲憊的私密之境</span></div>
+        <div>Hush Space, Healing Horizon.</div>
+      </div>
+    </div>
     <div class="btn-group">
       <a class="btn btn-primary" href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener">詢問今天空位與師傅</a>
       <a class="btn btn-secondary" href="#plans">查看方案價格</a>
@@ -957,7 +1066,7 @@ footer{
       <img class="therapist-cover" src="41.webp" alt="台中東區男士按摩師 Gary 蓋瑞" width="360" height="480" loading="eager" decoding="async" fetchpriority="high">
       <div class="info">
         <h3>Gary 蓋瑞｜173/68/30</h3>
-        <p>帥氣單眼皮、粗框眼鏡、大胸肌，暖男憨厚型，按摩力道足。</p>
+        <p>帥氣單眼皮、粗框眼鏡、大胸肌，暖男憨厚型，按摩力道足，配合度高。</p>
         <div class="tag-row"><span class="tag">肉壯厚實</span><span class="tag">按摩技術派</span></div>
       </div>
     </article>
@@ -983,19 +1092,8 @@ footer{
       <img class="therapist-cover" src="61.webp" alt="台中同志按摩師 Henry 亨利" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
         <h3>Henry 亨利｜176/67/23</h3>
-        <p>白皙可愛，鄰家男孩型，小奶狗氣質。</p>
+        <p>白皙可愛，鄰家男孩型，小奶狗氣質，配合度高。</p>
         <div class="tag-row"><span class="tag">精實型男</span><span class="tag">溫柔互動</span><span class="tag">肉壯厚實</span></div>
-      </div>
-    </article>
-
-<article class="card therapist"
-         data-tags="muscle skill"
-         onclick="openTherapist('ted')">
-      <img class="therapist-cover" src="151.webp" alt="台中運動按摩男師 Ted 泰德" width="360" height="480" loading="lazy" decoding="async">
-      <div class="info">
-        <h3>Ted 泰德｜168/78/28</h3>
-        <p>健身教練背景，擅長運動後放鬆與力道扎實的舒壓。</p>
-        <div class="tag-row"><span class="tag">肉壯厚實</span><span class="tag">按摩技術派</span></div>
       </div>
     </article>
 
@@ -1016,7 +1114,7 @@ footer{
       <img class="therapist-cover" src="81.webp" alt="台中東區男士按摩師 Wesley 衛斯理" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
         <h3>Wesley 衛斯理｜164/56/28</h3>
-        <p>小隻馬身形，專業油壓手法，配合度高。</p>
+        <p>小隻馬身形，專業油壓手法。</p>
         <div class="tag-row"><span class="tag">按摩技術派</span><span class="tag">溫柔互動</span></div>
       </div>
     </article>
@@ -1090,7 +1188,7 @@ footer{
 <article class="card therapist"
          data-tags="muscle skill"
          onclick="openTherapist('fang')">
-      <img class="therapist-cover" src="111.webp" alt="台中肉壯學生男師 Fang 方" width="360" height="480" loading="lazy" decoding="async">
+      <img class="therapist-cover" src="112.webp" alt="台中肉壯學生男師 Fang 方" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
         <h3>Fang 方｜177/77/19</h3>
         <p>肉壯學生，大尺碼體格，專業按摩，具傳統整復證照。</p>
@@ -1272,10 +1370,10 @@ footer{
     </div>
 
     <div class="map-wrap">
-      <iframe title="H2 Men's Spa Google 地圖位置" src="https://www.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B520%E5%B7%B740%E8%99%9F&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title="H2 Men's Spa Google 地圖位置" src="https://www.google.com/maps?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B520%E5%B7%B738%E8%99%9F&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="btn-group">
-      <a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B520%E5%B7%B740%E8%99%9F" target="_blank" rel="noopener" class="btn btn-primary">開啟 Google 地圖導航</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%B8%82%E6%9D%B1%E5%8D%80%E5%BE%A9%E8%88%88%E8%B7%AF%E5%9B%9B%E6%AE%B520%E5%B7%B738%E8%99%9F" target="_blank" rel="noopener" class="btn btn-primary">開啟 Google 地圖導航</a>
       <a href="https://www.google.com/maps/search/?api=1&query=%E6%97%A5%E6%9C%88%E4%BA%AD%E5%8F%B0%E4%B8%AD%E8%B7%AF%E5%81%9C%E8%BB%8A%E5%A0%B4+%E5%8F%B0%E4%B8%AD%E5%B8%82%E5%8D%97%E5%8D%80%E9%95%B7%E6%98%A5%E9%87%8C%E5%8F%B0%E4%B8%AD%E8%B7%AF116%E8%99%9F" target="_blank" rel="noopener" class="btn btn-secondary">查看附近停車場</a>
     </div>
   </div>
@@ -1446,6 +1544,8 @@ footer{
     <a href="https://www.h2menspa.com/seo/taichung-massage-recommend.html">台中按摩推薦</a>
     <a href="https://www.h2menspa.com/seo/taichung-east-district-massage.html">台中東區按摩</a>
     <a href="https://www.h2menspa.com/seo/taichung-station-massage.html">台中火車站按摩</a>
+    <a href="/blog/taichung-east-district-massage.html">台中東區按摩指南</a>
+    <a href="/blog/taichung-station-mens-spa.html">台中火車站附近男士 SPA</a>
     <a href="https://www.h2menspa.com/seo/xitun-massage.html">西屯搬遷說明</a>
     <a href="https://www.h2menspa.com/seo/fengjia-massage.html">逢甲搬遷說明</a>
   </div>
@@ -1485,7 +1585,7 @@ const therapistDetails = {
     name:"Gary 蓋瑞",
     meta:"173 / 68 / 30",
     tags:["肉壯厚實","按摩技術派"],
-    desc:"帥氣單眼皮、粗框眼鏡、大胸肌，暖男憨厚型，按摩力道足。",
+    desc:"帥氣單眼皮、粗框眼鏡、大胸肌，暖男憨厚型，按摩力道足，配合度高。",
     images:["41.webp","42.webp","43.webp","44.webp"]
   },
   ronnie:{
@@ -1499,7 +1599,7 @@ const therapistDetails = {
     name:"Henry 亨利",
     meta:"176 / 67 / 23",
     tags:["精實型男","溫柔互動","肉壯厚實"],
-    desc:"白皙可愛，鄰家男孩型，小奶狗氣質。",
+    desc:"白皙可愛，鄰家男孩型，小奶狗氣質，配合度高。",
     images:["61.webp","62.webp","63.webp","64.webp"]
   },
   ted:{
@@ -1520,7 +1620,7 @@ const therapistDetails = {
     name:"Wesley 衛斯理",
     meta:"164 / 56 / 28",
     tags:["按摩技術派","溫柔互動"],
-    desc:"小隻馬身形，專業油壓手法，配合度高。",
+    desc:"小隻馬身形，專業油壓手法。",
     images:["81.webp","82.webp","83.webp","84.webp"]
   },
   poter:{
@@ -1570,7 +1670,7 @@ const therapistDetails = {
     meta:"177 / 77 / 19",
     tags:["肉壯厚實","按摩技術派"],
     desc:"肉壯學生，大尺碼體格，專業按摩，具傳統整復證照。",
-    images:["111.webp","112.webp","113.webp","114.webp"]
+    images:["112.webp","112.webp","113.webp","113.webp"]
   }
 };
 
