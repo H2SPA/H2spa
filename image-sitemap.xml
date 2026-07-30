@@ -25,4 +25,67 @@
     <image:image><image:loc>https://www.h2menspa.com/space3.webp</image:loc><image:title>H2 Men's Spa 預約制按摩空間</image:title></image:image>
     <image:image><image:loc>https://www.h2menspa.com/space4.webp</image:loc><image:title>H2 Men's Spa 台中火車站附近環境</image:title></image:image>
   </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/first-time-mens-spa.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/first-time-mens-spa.png</image:loc>
+      <image:title>第一次預約男士 SPA 會尷尬嗎？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/taichung-mens-spa-guide.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/taichung-mens-spa-guide.png</image:loc>
+      <image:title>台中男士按摩推薦指南</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/taichung-east-district-massage.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/taichung-east-district-massage.png</image:loc>
+      <image:title>台中東區男士按摩怎麼選？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/taichung-station-mens-spa.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/taichung-station-mens-spa.png</image:loc>
+      <image:title>台中火車站附近男士 SPA 指南</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/post-workout-massage.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/post-workout-massage.png</image:loc>
+      <image:title>健身後為什麼適合安排運動按摩？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/xitun-night-massage.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/xitun-night-massage.png</image:loc>
+      <image:title>西屯區深夜男士按摩怎麼選？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/mens-spa-vs-normal-massage.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/mens-spa-vs-normal-massage.png</image:loc>
+      <image:title>男士 SPA 與一般按摩差在哪？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/taichung-mens-spa-recommend.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/taichung-mens-spa-recommend.png</image:loc>
+      <image:title>台中男士 SPA 推薦怎麼選？</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.h2menspa.com/blog/taichung-south-district-to-east-district-massage.html</loc>
+    <image:image>
+      <image:loc>https://www.h2menspa.com/blog-images/south-to-east-district-massage.png</image:loc>
+      <image:title>台中南區男士按摩到東區方便嗎？</image:title>
+    </image:image>
+  </url>
 </urlset>
