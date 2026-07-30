@@ -17,11 +17,6 @@
 <meta property="og:url" content="https://www.h2menspa.com/">
 <meta property="og:image" content="https://www.h2menspa.com/h2-main-banner.webp">
 
-<link rel="preload" as="image" href="cover.jpg" fetchpriority="high">
-<link rel="preload" as="image" href="h2-main-banner.webp" fetchpriority="high">
-<link rel="preload" as="image" href="31.webp" fetchpriority="high">
-<link rel="preload" as="image" href="71.webp" fetchpriority="high">
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,7 +33,7 @@
         "H2 SPA"
       ],
       "url": "https://www.h2menspa.com/",
-      "image": "https://www.h2menspa.com/cover.jpg",
+      "image": "https://www.h2menspa.com/h2-main-banner.webp",
       "description": "H2 Men's Spa 位於台中市東區復興路四段20巷38號，距離台中火車站步行約10分鐘，提供預約制男士按摩、同志友善 SPA、運動後放鬆與男士保養服務，可透過官方 LINE ID @499bwixl 詢問今日空位與推薦師傅。",
       "priceRange": "NT$1800 - NT$4300",
       "address": {
@@ -280,8 +275,8 @@ img{max-width:100%;height:auto}
   padding:105px 20px;
   overflow:hidden;
   background:
-    linear-gradient(rgba(2,5,10,.55),rgba(2,5,10,.88)),
-    url('cover.jpg') center/cover no-repeat;
+    radial-gradient(circle at 50% 16%,rgba(0,217,255,.12),transparent 36%),
+    linear-gradient(180deg,#07131b 0%,#050a10 70%,#030609 100%);
 }
 .hero::before{
   content:"";
@@ -455,6 +450,53 @@ img{max-width:100%;height:auto}
   gap:24px;
 }
 
+#therapist-list.is-collapsed .therapist:nth-child(n+7){
+  display:none;
+}
+
+.therapist-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.therapist-toggle{
+  border:1px solid rgba(0,255,157,.28);
+  background:rgba(0,255,157,.08);
+  color:#9effdc;
+  cursor:pointer;
+}
+
+.therapist-toggle:hover{
+  background:rgba(0,255,157,.14);
+  border-color:rgba(0,255,157,.42);
+}
+
+.therapist-help{
+  margin:28px auto 0;
+  max-width:760px;
+  padding:20px 24px;
+  border:1px solid rgba(0,217,255,.12);
+  border-radius:20px;
+  background:rgba(255,255,255,.035);
+  text-align:center;
+  color:var(--muted);
+}
+
+.therapist-help strong{
+  display:block;
+  margin-bottom:6px;
+  color:#fff;
+  font-size:18px;
+}
+
+.therapist-help a{
+  color:#9effdc;
+  font-weight:800;
+}
+
 .therapist-cover{
   width:100%;
   aspect-ratio:4/5;
@@ -471,6 +513,10 @@ img{max-width:100%;height:auto}
 }
 
 .therapist{padding:22px;margin-bottom:0;cursor:pointer}
+.therapist:focus-visible{
+  outline:3px solid rgba(0,255,157,.55);
+  outline-offset:4px;
+}
 .therapist.hidden{display:none}
 .photo-row{
   display:grid;
@@ -855,6 +901,9 @@ footer{
     background:rgba(255,255,255,.05);
     border:1px solid rgba(0,217,255,.10);
   }
+  #therapist-list.is-collapsed .therapist:nth-child(n+5){
+    display:none;
+  }
   .photo-row{grid-template-columns:repeat(2,1fr)}
   .plans-grid,.recruitment-grid,.key-list{grid-template-columns:1fr}
   .hero{min-height:68vh;padding:86px 18px}
@@ -994,17 +1043,12 @@ footer{
   <div class="nav-inner">
     <a class="brand" href="https://www.h2menspa.com/" aria-label="H2 Men's Spa 首頁">H2 Men's Spa</a>
     <div class="nav-links">
-      <a href="https://www.h2menspa.com/">首頁</a>
       <a href="#therapist">師傅</a>
       <a href="#plans">方案</a>
       <a href="#about">介紹</a>
       <a href="#environment">環境</a>
       <a href="#map">交通</a>
       <a href="#faq">FAQ</a>
-      <a href="#blog">專欄</a>
-      <a href="https://www.h2menspa.com/seo/taichung-massage.html">台中男士按摩</a>
-      <a href="https://www.h2menspa.com/seo/taichung-gay-spa.html">台中 Gay SPA</a>
-      <a href="https://www.h2menspa.com/seo/taichung-gay-massage.html">台中同志按摩</a>
       <a href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener">LINE 預約</a>
     </div>
   </div>
@@ -1052,7 +1096,7 @@ footer{
     <button class="filter-btn" data-filter="skill" type="button">按摩技術派</button>
   </div>
 
-  <div id="therapist-list">
+  <div id="therapist-list" class="is-collapsed">
 <article class="card therapist"
          data-tags="muscle skill"
          onclick="openTherapist('cade')">
@@ -1173,6 +1217,21 @@ footer{
         <div class="tag-row"><span class="tag">肉壯厚實</span><span class="tag">按摩技術派</span></div>
       </div>
     </article></div>
+
+  <div class="therapist-actions">
+    <button class="btn therapist-toggle" id="therapistToggle" type="button" aria-expanded="false" aria-controls="therapist-list">
+      查看全部 11 位師傅
+    </button>
+    <a class="btn btn-primary" href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener">
+      詢問今日可預約師傅
+    </a>
+  </div>
+
+  <div class="therapist-help">
+    <strong>不知道哪位師傅適合你？</strong>
+    告訴我們偏好的風格、按摩力道與時段，
+    <a href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener">由 LINE 官方協助推薦</a>。
+  </div>
 </section>
 
 <section class="section" id="booking">
@@ -1543,6 +1602,8 @@ footer{
 <div class="detail-panel" id="detailPanel">
 
   <button class="detail-close"
+          type="button"
+          aria-label="關閉師傅詳細資料"
           onclick="closeTherapist()">
     ✕
   </button>
@@ -1700,12 +1761,38 @@ function changeDetailImage(src){
 
 const filterButtons = document.querySelectorAll('.filter-btn');
 const therapists = document.querySelectorAll('.therapist');
+const therapistList = document.getElementById('therapist-list');
+const therapistToggle = document.getElementById('therapistToggle');
+
+therapists.forEach(card => {
+  const name = card.querySelector('h3')?.textContent?.trim() || '師傅';
+  card.setAttribute('role', 'button');
+  card.setAttribute('tabindex', '0');
+  card.setAttribute('aria-label', `查看 ${name} 的照片與詳細資料`);
+  card.addEventListener('keydown', event => {
+    if(event.key === 'Enter' || event.key === ' '){
+      event.preventDefault();
+      card.click();
+    }
+  });
+});
+
+therapistToggle.addEventListener('click', () => {
+  const isCollapsed = therapistList.classList.toggle('is-collapsed');
+  therapistToggle.setAttribute('aria-expanded', String(!isCollapsed));
+  therapistToggle.textContent = isCollapsed ? '查看全部 11 位師傅' : '收合師傅名單';
+});
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
     const filter = button.dataset.filter;
+    const shouldCollapse = filter === 'all';
+    therapistList.classList.toggle('is-collapsed', shouldCollapse);
+    therapistToggle.hidden = !shouldCollapse;
+    therapistToggle.setAttribute('aria-expanded', 'false');
+    therapistToggle.textContent = '查看全部 11 位師傅';
     therapists.forEach(card => {
       const tags = card.dataset.tags || '';
       if (filter === 'all' || tags.split(' ').includes(filter)) {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow">
+  <title>找不到頁面｜H2 Men's Spa</title>
+  <meta name="description" content="找不到您要瀏覽的頁面，請返回 H2 Men's Spa 首頁查看師傅、方案、交通與預約資訊。">
+  <link rel="stylesheet" href="/shared-site.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <style>
+    .error-page{
+      min-height:calc(100vh - 70px);
+      display:grid;
+      place-items:center;
+      padding:48px 20px;
+      box-sizing:border-box;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 20%,rgba(0,240,168,.12),transparent 32%),
+        linear-gradient(180deg,#07131b,#030609);
+    }
+    .error-card{
+      width:min(680px,100%);
+      padding:48px 30px;
+      border:1px solid rgba(21,200,255,.14);
+      border-radius:28px;
+      background:rgba(11,19,28,.88);
+      box-shadow:0 28px 80px rgba(0,0,0,.32);
+    }
+    .error-code{
+      margin:0;
+      font-size:clamp(72px,16vw,150px);
+      line-height:.9;
+      background:linear-gradient(135deg,var(--h2-green),var(--h2-blue));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .error-card h1{margin:24px 0 10px;font-size:clamp(28px,5vw,42px)}
+    .error-card p{color:var(--h2-muted);font-size:17px;line-height:1.8}
+    .error-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .error-actions a{
+      padding:13px 20px;
+      border-radius:999px;
+      color:#03100d;
+      font-weight:900;
+      text-decoration:none;
+      background:linear-gradient(135deg,var(--h2-green),var(--h2-blue));
+    }
+    .error-actions a:last-child{
+      color:var(--h2-text);
+      border:1px solid rgba(21,200,255,.22);
+      background:rgba(255,255,255,.04);
+    }
+  </style>
+</head>
+<body>
+  <header class="h2-site-header">
+    <div class="h2-site-nav">
+      <a class="h2-site-brand" href="/">H2 <span>Men's Spa</span></a>
+      <nav class="h2-site-links" aria-label="主要導覽">
+        <a href="/#therapist">師傅</a>
+        <a href="/#plans">方案</a>
+        <a href="/#environment">環境</a>
+        <a href="/#map">交通</a>
+        <a href="/#faq">FAQ</a>
+        <a class="h2-site-line" href="https://line.me/R/ti/p/@499bwixl">LINE 預約</a>
+      </nav>
+    </div>
+  </header>
+  <main class="error-page">
+    <section class="error-card">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>這個頁面不存在</h1>
+      <p>網址可能已變更或輸入錯誤。您可以返回首頁查看師傅、方案與交通資訊，或直接透過 LINE 詢問今日空位。</p>
+      <div class="error-actions">
+        <a href="/">返回 H2 首頁</a>
+        <a href="https://line.me/R/ti/p/@499bwixl">LINE 詢問空位</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
