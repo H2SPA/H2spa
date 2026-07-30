@@ -16,6 +16,10 @@
   object-fit: contain;
 }
 
+.blog-hero-visual picture {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .blog-hero-visual {
     width: calc(100% - 20px);
