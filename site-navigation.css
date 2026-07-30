@@ -1,0 +1,114 @@
+.h2-site-nav{
+  --h2-nav-green:#00ff9d;
+  --h2-nav-blue:#00d9ff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  width:100%;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  background:rgba(4,8,14,.88);
+  border-bottom:1px solid rgba(0,217,255,.08);
+}
+
+.h2-site-nav-inner{
+  max-width:1150px;
+  margin:0 auto;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.h2-site-brand{
+  flex:0 0 auto;
+  font-size:22px;
+  font-weight:900;
+  line-height:1.4;
+  letter-spacing:1px;
+  text-decoration:none;
+  background:linear-gradient(90deg,#fff,var(--h2-nav-green),var(--h2-nav-blue));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.h2-site-links{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.h2-site-links a{
+  color:#dcecff;
+  text-decoration:none;
+  font-size:13px;
+  line-height:1.4;
+  padding:8px 12px;
+  border:0;
+  border-radius:999px;
+  background:transparent;
+  transition:background .25s ease,color .25s ease;
+}
+
+.h2-site-links a:hover,
+.h2-site-links a:focus-visible{
+  color:var(--h2-nav-green);
+  text-decoration:none;
+  background:rgba(0,217,255,.08);
+  outline:none;
+}
+
+.h2-site-links .h2-line-link{
+  color:#021014;
+  font-weight:900;
+  background:linear-gradient(135deg,var(--h2-nav-green),var(--h2-nav-blue));
+}
+
+.h2-site-links .h2-line-link:hover,
+.h2-site-links .h2-line-link:focus-visible{
+  color:#021014;
+  background:linear-gradient(135deg,#36ffb6,#38e2ff);
+}
+
+.legacy-page-nav{
+  display:none !important;
+}
+
+@media(max-width:768px){
+  .h2-site-nav-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .h2-site-links{
+    width:100%;
+    flex-wrap:nowrap;
+    gap:8px;
+    padding-top:10px;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+  }
+
+  .h2-site-links::-webkit-scrollbar{
+    display:none;
+  }
+
+  .h2-site-links a{
+    flex:0 0 auto;
+    white-space:nowrap;
+    font-size:12px;
+    padding:8px 12px;
+    border:1px solid rgba(0,217,255,.10);
+    background:rgba(255,255,255,.05);
+  }
+
+  .h2-site-links .h2-line-link{
+    border-color:transparent;
+    background:linear-gradient(135deg,var(--h2-nav-green),var(--h2-nav-blue));
+  }
+}
