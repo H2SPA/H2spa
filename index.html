@@ -16,6 +16,17 @@
 <meta property="og:description" content="H2 Men's Spa 位於台中東區，近台中火車站，提供台中男士SPA、男士按摩、油壓舒壓、運動後放鬆與同志友善SPA。LINE預約制，私密安靜空間，本店不提供性服務。">
 <meta property="og:url" content="https://www.h2menspa.com/">
 <meta property="og:image" content="https://www.h2menspa.com/h2-main-banner.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="836">
+<meta property="og:image:height" content="470">
+<meta property="og:site_name" content="H2 Men's Spa">
+<meta property="og:image:alt" content="H2 Men's Spa｜Hush & Horizon">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="台中男士SPA推薦｜台中東區男士按摩・近台中火車站｜H2 Men's Spa">
+<meta name="twitter:description" content="H2 Men's Spa 位於台中東區，近台中火車站，提供台中男士SPA、男士按摩、油壓舒壓、運動後放鬆與同志友善SPA。LINE預約制，私密安靜空間，本店不提供性服務。">
+<meta name="twitter:image" content="https://www.h2menspa.com/h2-main-banner.webp">
+<meta name="twitter:image:alt" content="H2 Men's Spa｜Hush & Horizon">
 
 <script type="application/ld+json">
 {
@@ -187,13 +198,7 @@
 }
 </script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4BPYDFR29"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Y4BPYDFR29');
-</script>
+<script src="/site-analytics.js" defer></script>
 
 <style>
 :root{
@@ -770,7 +775,21 @@ footer{
 .detail-thumbs img{
   width:100%;
   border-radius:14px;
+  display:block;
+}
+
+.detail-thumb-button{
+  padding:0;
+  border:0;
+  border-radius:14px;
+  background:transparent;
   cursor:pointer;
+}
+
+.detail-thumb-button:focus-visible,
+.detail-close:focus-visible{
+  outline:3px solid #00d9ff;
+  outline-offset:3px;
 }
 
 .detail-name{
@@ -1050,6 +1069,12 @@ footer{
   <div id="therapist-list">
 <article class="card therapist"
          data-tags="muscle skill"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Cade 凱德的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'cade')"
          onclick="openTherapist('cade')">
       <img class="therapist-cover" src="31.webp" alt="台中東區男士按摩師 Cade 凱德" width="360" height="480" loading="eager" decoding="async" fetchpriority="high">
       <div class="info">
@@ -1061,6 +1086,12 @@ footer{
 
 <article class="card therapist"
          data-tags="muscle skill"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Gary 蓋瑞的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'gary')"
          onclick="openTherapist('gary')">
       <img class="therapist-cover" src="41.webp" alt="台中東區男士按摩師 Gary 蓋瑞" width="360" height="480" loading="eager" decoding="async" fetchpriority="high">
       <div class="info">
@@ -1072,6 +1103,12 @@ footer{
 
 <article class="card therapist"
          data-tags="fit gentle muscle"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Henry 亨利的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'henry')"
          onclick="openTherapist('henry')">
       <img class="therapist-cover" src="61.webp" alt="台中同志按摩師 Henry 亨利" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1083,6 +1120,12 @@ footer{
 
 <article class="card therapist"
          data-tags="fit gentle"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Leo 里歐的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'leo')"
          onclick="openTherapist('leo')">
       <img class="therapist-cover" src="51.webp" alt="台中同志 SPA 師傅 Leo 里歐" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1094,6 +1137,12 @@ footer{
 
 <article class="card therapist"
          data-tags="skill gentle"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Wesley 衛斯理的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'wesley')"
          onclick="openTherapist('wesley')">
       <img class="therapist-cover" src="81.webp" alt="台中東區男士按摩師 Wesley 衛斯理" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1105,6 +1154,12 @@ footer{
 
 <article class="card therapist"
          data-tags="muscle skill"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Poter 波特的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'poter')"
          onclick="openTherapist('poter')">
       <img class="therapist-cover" src="91.webp" alt="台中肉壯男師 Poter 波特" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1116,6 +1171,12 @@ footer{
 
 <article class="card therapist"
          data-tags="gentle fit"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Ting 廷的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'ting')"
          onclick="openTherapist('ting')">
       <img class="therapist-cover" src="11.webp" alt="台中東區男士按摩 Ting 廷" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1127,6 +1188,12 @@ footer{
 
 <article class="card therapist"
          data-tags="gentle fit"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Ryan 瑞恩的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'ryan')"
          onclick="openTherapist('ryan')">
       <img class="therapist-cover" src="141.webp" alt="台中小隻馬男師 Ryan 瑞恩" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1138,6 +1205,12 @@ footer{
 
 <article class="card therapist"
          data-tags="gentle fit"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Jimmy 吉米的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'jimmy')"
          onclick="openTherapist('jimmy')">
       <img class="therapist-cover" src="21.webp" alt="台中白皙男師 Jimmy 吉米" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1149,6 +1222,12 @@ footer{
 
 <article class="card therapist"
          data-tags="gentle fit"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 EF 伊夫的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'ef')"
          onclick="openTherapist('ef')">
       <img class="therapist-cover" src="121.webp" alt="台中白淨學生型男師 EF 伊夫" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1160,6 +1239,12 @@ footer{
 
 <article class="card therapist"
          data-tags="muscle skill"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Fang 方的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'fang')"
          onclick="openTherapist('fang')">
       <img class="therapist-cover" src="112.webp" alt="台中肉壯學生男師 Fang 方" width="360" height="480" loading="lazy" decoding="async">
       <div class="info">
@@ -1533,11 +1618,21 @@ footer{
 
 <div class="detail-overlay"
      id="detailOverlay"
+     aria-hidden="true"
      onclick="closeTherapist()"></div>
 
-<div class="detail-panel" id="detailPanel">
+<div class="detail-panel"
+     id="detailPanel"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="detailName"
+     aria-hidden="true"
+     inert
+     tabindex="-1">
 
   <button class="detail-close"
+          type="button"
+          aria-label="關閉師傅詳細資料"
           onclick="closeTherapist()">
     ✕
   </button>
@@ -1634,9 +1729,19 @@ const therapistDetails = {
   }
 };
 
+let lastFocusedElement = null;
+
+function handleTherapistKey(event,id){
+  if(event.key === "Enter" || event.key === " "){
+    event.preventDefault();
+    openTherapist(id);
+  }
+}
+
 function openTherapist(id){
   const t = therapistDetails[id];
   if(!t) return;
+  lastFocusedElement = document.activeElement;
 
   document.getElementById("detailContent").innerHTML = `
     <div class="detail-grid">
@@ -1647,16 +1752,20 @@ function openTherapist(id){
              alt="${t.name} H2 Men's Spa 台中男士按摩師傅">
 
         <div class="detail-thumbs">
-          ${t.images.map(img=>`
-            <img src="${img}"
-                 alt="${t.name} 師傅照片"
-                 onclick="event.stopPropagation();changeDetailImage('${img}')">
+          ${t.images.map((img,index)=>`
+            <button class="detail-thumb-button"
+                    type="button"
+                    aria-label="查看 ${t.name} 第 ${index + 1} 張照片"
+                    onclick="changeDetailImage('${img}')">
+              <img src="${img}"
+                   alt="${t.name} 師傅照片 ${index + 1}">
+            </button>
           `).join("")}
         </div>
       </div>
 
       <div>
-        <div class="detail-name">${t.name}</div>
+        <div class="detail-name" id="detailName">${t.name}</div>
         <div class="detail-meta">${t.meta}</div>
 
         <div class="detail-tags">
@@ -1680,13 +1789,31 @@ function openTherapist(id){
 
   document.getElementById("detailOverlay").classList.add("active");
   document.getElementById("detailPanel").classList.add("active");
+  document.getElementById("detailOverlay").setAttribute("aria-hidden","false");
+  document.getElementById("detailPanel").setAttribute("aria-hidden","false");
+  document.getElementById("detailPanel").removeAttribute("inert");
   document.body.style.overflow = "hidden";
+  window.h2TrackEvent?.("therapist_profile_open",{
+    therapist_id:id,
+    therapist_name:t.name,
+    page_path:window.location.pathname
+  });
+  requestAnimationFrame(()=>{
+    document.querySelector(".detail-close").focus();
+  });
 }
 
 function closeTherapist(){
   document.getElementById("detailOverlay").classList.remove("active");
   document.getElementById("detailPanel").classList.remove("active");
+  document.getElementById("detailOverlay").setAttribute("aria-hidden","true");
+  document.getElementById("detailPanel").setAttribute("aria-hidden","true");
+  document.getElementById("detailPanel").setAttribute("inert","");
   document.body.style.overflow = "";
+  if(lastFocusedElement){
+    lastFocusedElement.focus();
+    lastFocusedElement = null;
+  }
 }
 
 function changeDetailImage(src){
@@ -1712,8 +1839,31 @@ filterButtons.forEach(button => {
   });
 });
 
-window.addEventListener('keydown', (event) => {
-  if(event.key === 'Escape') closeTherapist();
+document.addEventListener("keydown",event=>{
+  const panel = document.getElementById("detailPanel");
+  if(!panel.classList.contains("active")) return;
+
+  if(event.key === "Escape"){
+    event.preventDefault();
+    closeTherapist();
+    return;
+  }
+
+  if(event.key !== "Tab") return;
+  const focusable = [...panel.querySelectorAll(
+    'button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])'
+  )];
+  if(!focusable.length) return;
+
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if(event.shiftKey && document.activeElement === first){
+    event.preventDefault();
+    last.focus();
+  }else if(!event.shiftKey && document.activeElement === last){
+    event.preventDefault();
+    first.focus();
+  }
 });
 </script>
 </body>
