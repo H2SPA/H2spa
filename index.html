@@ -1068,6 +1068,40 @@ footer{
 
   <div id="therapist-list">
 <article class="card therapist"
+         data-tags="fit"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Liam 的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'liam')"
+         onclick="openTherapist('liam')">
+      <img class="therapist-cover" src="therapist-images/liam-1.webp" alt="台中韓系精緻男師 Liam" width="360" height="480" loading="eager" decoding="async" fetchpriority="high">
+      <div class="info">
+        <h3>Liam｜180/60/23</h3>
+        <p>白皙粉嫩、韓系精緻、五官立體。</p>
+        <div class="tag-row"><span class="tag">精實型男</span></div>
+      </div>
+    </article>
+
+<article class="card therapist"
+         data-tags="muscle"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Gin 的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'gin')"
+         onclick="openTherapist('gin')">
+      <img class="therapist-cover" src="therapist-images/gin-1.webp" alt="台中厚實高壯男師 Gin" width="360" height="480" loading="eager" decoding="async" fetchpriority="high">
+      <div class="info">
+        <h3>Gin｜179/75/27</h3>
+        <p>厚實高壯、單眼皮、帥氣 Man。</p>
+        <div class="tag-row"><span class="tag">肉壯厚實</span></div>
+      </div>
+    </article>
+
+<article class="card therapist"
          data-tags="muscle skill"
          role="button"
          tabindex="0"
@@ -1642,6 +1676,20 @@ footer{
 </div>
   <script>
 const therapistDetails = {
+  liam:{
+    name:"Liam",
+    meta:"180 / 60 / 23",
+    tags:["精實型男"],
+    desc:"白皙粉嫩、韓系精緻、五官立體。",
+    images:["therapist-images/liam-1.webp","therapist-images/liam-2.webp","therapist-images/liam-3.webp","therapist-images/liam-4.webp"]
+  },
+  gin:{
+    name:"Gin",
+    meta:"179 / 75 / 27",
+    tags:["肉壯厚實"],
+    desc:"厚實高壯、單眼皮、帥氣 Man。",
+    images:["therapist-images/gin-1.webp","therapist-images/gin-2.webp","therapist-images/gin-3.webp","therapist-images/gin-4.webp"]
+  },
   cade:{
     name:"Cade 凱德",
     meta:"162 / 62 / 30",
