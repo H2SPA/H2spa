@@ -28,12 +28,31 @@
     };
 
     if(href.includes("line.me/")){
-      window.h2TrackEvent("line_reservation_click", commonParameters);
+      const lineParameters = {
+        ...commonParameters,
+        line_source: link.dataset.lineSource || "unspecified"
+      };
+      window.h2TrackEvent("line_reservation_click", lineParameters);
+
+      if(link.dataset.therapistId){
+        window.h2TrackEvent("therapist_reservation_click", {
+          ...lineParameters,
+          therapist_id: link.dataset.therapistId,
+          therapist_name: link.dataset.therapistName || ""
+        });
+      }
+
+      if(link.dataset.recruitmentClick === "true"){
+        window.h2TrackEvent("recruitment_click", lineParameters);
+      }
       return;
     }
 
     if(href.includes("google.com/maps")){
-      window.h2TrackEvent("map_navigation_click", commonParameters);
+      window.h2TrackEvent("map_navigation_click", {
+        ...commonParameters,
+        map_source: link.dataset.mapSource || "unspecified"
+      });
       return;
     }
 
