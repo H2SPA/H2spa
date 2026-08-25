@@ -1315,7 +1315,24 @@ footer{
 
   <div id="therapist-list">
 <article class="card therapist"
-         data-tags="muscle"
+         data-tags="muscle gentle"
+         role="button"
+         tabindex="0"
+         aria-haspopup="dialog"
+         aria-controls="detailPanel"
+         aria-label="查看 Link 林克的照片與詳細資料"
+         onkeydown="handleTherapistKey(event,'link')"
+         onclick="openTherapist('link')">
+      <img class="therapist-cover" src="therapist-images/link-4.webp" alt="台中東區男士按摩師 Link 林克" width="1200" height="1200" loading="lazy" decoding="async">
+      <div class="info">
+        <h3>Link 林克｜176/76/20</h3>
+        <p>優質可愛、韓系帥弟、白皙學生。</p>
+        <div class="tag-row"><span class="tag">肉壯厚實</span><span class="tag">溫柔互動</span></div>
+      </div>
+    </article>
+
+<article class="card therapist"
+         data-tags="muscle skill gentle"
          role="button"
          tabindex="0"
          aria-haspopup="dialog"
@@ -1327,7 +1344,7 @@ footer{
       <div class="info">
         <h3>Gin 晉｜179/75/27</h3>
         <p>厚實高壯、單眼皮、帥氣 Man。</p>
-        <div class="tag-row"><span class="tag">肉壯厚實</span></div>
+        <div class="tag-row"><span class="tag">肉壯厚實</span><span class="tag">按摩技術派</span><span class="tag">溫柔互動</span></div>
       </div>
     </article>
 
@@ -1997,6 +2014,13 @@ footer{
 </div>
   <script>
 const therapistDetails = {
+  link:{
+    name:"Link 林克",
+    meta:"176 / 76 / 20",
+    tags:["肉壯厚實","溫柔互動"],
+    desc:"優質可愛、韓系帥弟、白皙學生。",
+    images:["therapist-images/link-4.webp","therapist-images/link-1.webp","therapist-images/link-2.webp","therapist-images/link-3.webp"]
+  },
   liam:{
     name:"Liam 連恩",
     meta:"180 / 60 / 23",
@@ -2007,7 +2031,7 @@ const therapistDetails = {
   gin:{
     name:"Gin 晉",
     meta:"179 / 75 / 27",
-    tags:["肉壯厚實"],
+    tags:["肉壯厚實","按摩技術派","溫柔互動"],
     desc:"厚實高壯、單眼皮、帥氣 Man。",
     images:["therapist-images/gin-1.webp","therapist-images/gin-2.webp","therapist-images/gin-3.webp","therapist-images/gin-4.webp"]
   },
