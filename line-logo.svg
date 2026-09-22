@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">LINE</title>
+  <desc id="desc">LINE 官方帳號圖示</desc>
+  <path fill="#06C755" d="M60 10C32.4 10 10 27.7 10 49.5c0 17.5 15.4 32.6 36.3 38.1-.9 3.2-3.3 11.6-3.8 13.4-.6 2.2.8 2.2 1.7 1.6.7-.5 11.6-7.9 16.3-11.3 27.5-.2 49.5-18.6 49.5-41.8C110 27.7 87.6 10 60 10Z"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">LINE</text>
+</svg>
