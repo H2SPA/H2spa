@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>台中男士SPA推薦｜台中東區男士按摩・近台中火車站｜H2 Men's Spa</title>
+<title>台中男士 SPA 推薦｜價格、師傅與預約方式｜近台中火車站｜H2 Men’s Spa</title>
 <meta name="description" content="H2 Men's Spa 位於台中東區，近台中火車站，提供台中男士SPA、男士按摩、油壓舒壓、運動後放鬆與同志友善SPA。LINE預約制，私密安靜空間，本店不提供性服務。">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="google-site-verification" content="BX6pi2wJRKs9aiKvIAyroQWGOonXL6kM-vbCTVYl7vA">
@@ -1984,7 +1984,7 @@ footer{
 </footer>
 
 <a href="https://line.me/R/ti/p/@499bwixl" target="_blank" rel="noopener" class="line-float" data-line-source="floating_cta" aria-label="LINE 預約 H2 Men's Spa">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="" width="30" height="30">
+  <img src="line-logo.svg" alt="LINE 官方帳號" width="30" height="30">
   <span>詢問空位</span>
 </a>
 
@@ -2149,7 +2149,7 @@ function openTherapist(id){
             <button class="detail-thumb-button"
                     type="button"
                     aria-label="查看 ${t.name} 第 ${index + 1} 張照片"
-                    onclick="changeDetailImage('${img}')">
+                    onclick="changeDetailImage('${img}', '${t.name}', ${index + 1})">
               <img src="${img}"
                    alt="${t.name} 師傅照片 ${index + 1}">
             </button>
@@ -2212,8 +2212,10 @@ function closeTherapist(){
   }
 }
 
-function changeDetailImage(src){
-  document.getElementById("detailMainImage").src = src;
+function changeDetailImage(src, therapistName, index){
+  const image = document.getElementById("detailMainImage");
+  image.src = src;
+  image.alt = `${therapistName} H2 Men's Spa 台中男士按摩師傅照片 ${index}`;
 }
 
 const filterButtons = document.querySelectorAll('.filter-btn');
